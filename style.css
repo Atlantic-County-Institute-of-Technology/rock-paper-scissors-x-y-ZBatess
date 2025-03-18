@@ -1,0 +1,161 @@
+.square {
+    height: 1000px;
+    width: 0.5px;
+    background-color:rgb(161, 161, 161);
+    position: relative;
+    left: 900px;
+    border: 10px;
+    padding: 10px;
+    margin: 0;
+}
+
+.You {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    width: 500px;
+}
+
+.rock {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    left: 10px; 
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+ }
+
+.paper {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    left: 70px; 
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+ }
+
+.scissors {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    left: 130px; 
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+}
+
+.computer {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    width: 500px; 
+    left: 1400px;
+}
+
+.oldpizza {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    left: 190px; 
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+}
+
+.laptop {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    left: 250px; 
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+}
+
+.rock2 {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    left: 1845px; 
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+ }
+
+.paper2 {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    left: 1785px; 
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+ }
+
+.scissors2 {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    left: 1725px; 
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+}
+
+.oldpizza2 {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    left: 1665px; 
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+}
+
+.laptop2 {
+    position: absolute;
+    background-color:rgb(129, 129, 129);
+    border-style: solid; 
+    border-color: rgb(65, 65, 65);
+    border-width: 5px 5px; 
+    height: 100px;
+    left: 1605px; 
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+}
