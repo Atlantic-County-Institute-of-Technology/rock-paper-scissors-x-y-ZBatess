@@ -19,13 +19,13 @@
     width: 500px;
 }
 
-.buttons_left, .buttons_right {
+.player_options, .computer_options {
     position: absolute;
     width: 49%;
     bottom: 20px;
 }
 
-.buttons_right {
+.computer_options {
     right: 0;
     text-align: right;
 }
@@ -58,5 +58,30 @@
 }
 
 h3 {
-    text-align: center
+    display: flex;
+    width:60vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+
+.playerScore {
+margin: 10px;
+display: flex;
+width: 30px;
+position: absolute;
+top: 100px;
+}
+
+.computerScore {
+    margin: 10px;
+    display: flex;
+    width: 100px;
+    position: absolute;
+    top: 100px; 
+    left: 1750px;
+}
+.p-count {
+    text-align: center;
 }

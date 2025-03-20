@@ -1,0 +1,11 @@
+function getcomputerChoice() {
+    const choices = ['rock', 'paper', 'scissors'];
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    return choices[randomIndex];
+  }
+
+  fuction () findWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+        return "it's a tie!!!"
+    }
+  }
