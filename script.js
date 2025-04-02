@@ -1,3 +1,5 @@
+// all assets for the main game
+
 const rock = document.getElementById("rock");
 const scissors = document.getElementById("scissors");
 const paper = document.getElementById("paper");
@@ -7,19 +9,17 @@ const playerOptions = ['rock', 'paper', 'scissors', 'coworker', 'laptop'];
 const computerOptions = ['rock', 'paper', 'scissors', 'coworker', 'laptop']
 let player = document.getElementById("player")
 let player_score = document.getElementById("playerScore")
-
 let computer = document.getElementById("computer")
 let result = document.getElementById("result")
 let cpu_score = document.getElementById("computerScore")
 
-
+// player and cpu win/score defualt 
 let playerScore = 0;
 let computerScore = 0;
 let playerwins = 0
 let cpuwins = 0
-// let playChoice = 0;
-// let cpuChoice = 0;
 
+// add click as an event listener and 
 rock.addEventListener('click', () => {
   playgame(1, computerChoice())
 })
@@ -29,7 +29,7 @@ paper.addEventListener('click', () => {
 scissors.addEventListener('click', () => {
   playgame(3, computerChoice())
 })
-annoyingcoworker.addEventListener('click', () => {
+coworker.addEventListener('click', () => {
   playgame(4, computerChoice())
 })
 laptop.addEventListener('click', () => {
@@ -40,11 +40,12 @@ function playerChoice(choice) {
   playChoice = choice;
 }
 
-// TODO: Make a CPU Choice function that has the CPU Choose a random number from 1-5
+// CPU function that chooses a random number from 1-5
 function computerChoice() {
   return Math.floor(Math.random() * 4.99) + 1;
 }
 
+// Displays which player option beats the CPU option and displays a win message for the player.
 function playgame(player, cpu) {
   console.log(`Player = ${player} || CPU = ${cpu}`);
   if (player == 1) {
@@ -100,6 +101,44 @@ function playgame(player, cpu) {
       playerScore++; 
     }
   }
+  //CPU score
+   if (cpu == 1) {
+    console.log("cpu chose rock")
+    if (player == 3 || player == 4)
+    {
+      console.log("player loses")
+      result.innerHTML = `CPU wins! ${computerOptions[cpu-1]} beats ${playerOptions[player-1]}`;
+      c-count++;
+    }  
+  }
+  else if (cpu == 2) {
+    console.log("cpu chose paper")
+    if (player == 1 || player == 5)
+    {
+      console.log("player loses")
+      result.innerHTML = `CPU wins! ${computerOptions[cpu-1]} beats ${playerOptions[player-1]}`;
+      c-count++;
+    }
+  }
+  else if (cpu == 3) {
+    console.log("cpu chose scissors")
+    if (player == 2 || player == 4)
+    console.log("player loses")
+    result.innerHTML = `CPU wins! ${computerOptions[cpu-1]} beats ${playerOptions[player-1]}`;
+    c-count++;
+  }
+  if (cpu == 4) {
+    console.log("cpu chose coworker")
+    if (player == 2 || player == 5)
+    console.log("player loses")
+    result.innerHTML = `CPU wins! ${computerOptions[cpu-1]} beats ${playerOptions[player-1]}`;
+    c-count++;
+  }
+  if (cpu == 5) {
+    console.log("cpu chose laptop")
+    if (player == 2 || player == 1)
+    console.log("player loses")
+    result.innerHTML = `CPU wins! ${computerOptions[cpu-1]} beats ${playerOptions[player-1]}`;
+    c-count++;
+  }
 }
-
-
